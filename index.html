@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-  <html lang="pt-br">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Visualizador de Perfil do GitHub</title>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizador de Perfil do GitHub</title>
 
-      <link rel="stylesheet" href="src/css/reset.css" />
-      <link rel="stylesheet" href="src/css/styles.css" />
-      <link rel="stylesheet" href="src/css/animations.css" />
-      <link rel="stylesheet" href="src/css/responsive.css" />
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
-      />
-    </head>
-    <body>
-      <main>
-        <i class="devicon-github-original "></i>
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <i class="devicon-github-original github-icon"></i>
 
-        <section class="container">
-          <header>
-            <h1>Buscar Usuário do GitHub</h1>
-            <p class="search-hint">
-              Digite o nome de usuário do GitHub e tenha acesso aos dados do
-              perfil
-            </p>
-          </header>
+      <section class="container">
+        <header>
+          <h1>Buscar Usuário do GitHub</h1>
+          <p class="search-hint">
+            Digite o nome de usuário do GitHub e tenha acesso aos dados do
+            perfil
+          </p>
+        </header>
 
-          <form class="search-form" id="search-form">
-            <input
-              type="text"
-              id="input-search"
-              placeholder="Digite o nome do usuário no GitHub"
-              aria-label="Nome de usuário do GitHub"
-              autocomplete="off"
-            />
-            <button type="submit" id="btn-search">Buscar</button>
-          </form>
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            id="input-search"
+            placeholder="Digite o nome do usuário no GitHub"
+            aria-label="Nome de usuário do GitHub"
+            autocomplete="off"
+          />
+          <button type="submit" id="btn-search">Buscar</button>
+        </form>
 
-          <div class="profile-results" role="region" aria-live="polite"></div>
-        </section>
-      </main>
+        <div class="profile-results" role="region" aria-live="polite"></div>
+      </section>
+    </main>
 
-      <script type="module" src="src/js/index.js"></script>
-    </body>
-  </html>
+    <script type="module" src="src/js/index.js"></script>
+  </body>
 </html>
